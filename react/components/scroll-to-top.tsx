@@ -6,7 +6,7 @@ export const ScrollToTop: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset
+      const scrollTop = window.scrollY
       setIsVisible(scrollTop > 300)
     }
 
